@@ -4,7 +4,6 @@ import Header from "./components/header/Header";
 import Challenge from "./components/challenge/Challenge";
 import Home from "./components/home/Home";
 import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
           <Contact />
         </Route>
       </Switch>
-      <Footer />
     </>
   );
 }
