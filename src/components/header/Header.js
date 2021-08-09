@@ -57,7 +57,7 @@ const Header = () => {
             <div className={styles.logoContain}>
               <img
                 className={styles.logo}
-                src={`${process.env.PUBLIC_URL}/assets/bio-logo-optimizing.png`}
+                src={`${process.env.PUBLIC_URL}/assets/bio-logo-optimizing2.png`}
                 alt="logo"
               />
             </div>
