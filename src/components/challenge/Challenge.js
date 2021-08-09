@@ -5,13 +5,8 @@ import { Typography, Paper } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import { ListComponent, WadeList } from "./List";
 import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
-import TextField from "@material-ui/core/TextField";
-import Dialog from "@material-ui/core/Dialog";
-import DialogActions from "@material-ui/core/DialogActions";
-import DialogContent from "@material-ui/core/DialogContent";
-import DialogContentText from "@material-ui/core/DialogContentText";
-import DialogTitle from "@material-ui/core/DialogTitle";
 import Link from "@material-ui/core/Link";
+import PopUp from "./PopUp";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -115,27 +110,7 @@ const Challenge = () => {
           >
             DOUBLE MY ENERGY
           </Button>
-          <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-            <DialogTitle id="form-dialog-title">YES, I WANT TO ENHANCE MY HEALTH</DialogTitle>
-            <DialogContent>
-              <DialogContentText>Please enter your name and email below</DialogContentText>
-              <TextField autoFocus margin="dense" id="name" label="Full Name" type="text" fullWidth />
-              <TextField autoFocus margin="dense" id="email" label="Email Address" type="email" fullWidth />
-            </DialogContent>
-            <DialogActions>
-              <Button onClick={handleClose} color="primary">
-                Cancel
-              </Button>
-              <Button onClick={handleClose} variant="contained" className={styles.button}>
-                Double My Energy
-              </Button>
-            </DialogActions>
-            <DialogContent>
-              <DialogContentText>
-                We value your privacy and would never spam you. See our privacy policy
-              </DialogContentText>
-            </DialogContent>
-          </Dialog>
+          {open ? <PopUp open={open} handleClose={handleClose} /> : ""}
         </Grid>
         <Grid item container xs={12}>
           <Grid item xs={1}></Grid>
