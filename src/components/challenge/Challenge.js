@@ -102,7 +102,7 @@ const Challenge = () => {
           <div classnames={styles.imageContain}>
             <img
               className={styles.challengeImage}
-              src={`${process.env.PUBLIC_URL}/assets/AwesomeHealthCourse-Banner_555x500.jpeg`}
+              src={`${process.env.PUBLIC_URL}/assets/AwesomeHealthCourse-Banner.jpeg`}
               alt="health-course-banner"
             />
           </div>
