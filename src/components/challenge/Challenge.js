@@ -102,7 +102,7 @@ const Challenge = () => {
           <div classnames={styles.imageContain}>
             <img
               className={styles.challengeImage}
-              src={`${process.env.PUBLIC_URL}/assets/AwesomeHealthCourse-Banner.jpeg`}
+              src={`${process.env.PUBLIC_URL}/assets/AwesomeHealthCourse-Banner2.jpeg`}
               alt="health-course-banner"
             />
           </div>
@@ -141,7 +141,11 @@ const Challenge = () => {
           <Grid item xs={1}></Grid>
           <Grid item xs={1}>
             <div className={styles.quotes}>
-              <img className={styles.challengeImage} src={`${process.env.PUBLIC_URL}/assets/quote-l.png`} alt="quote" />
+              <img
+                className={styles.challengeImage}
+                src={`${process.env.PUBLIC_URL}/assets/quote-l2.png`}
+                alt="quote"
+              />
             </div>
           </Grid>
           <Grid item xs={8}>
@@ -152,7 +156,11 @@ const Challenge = () => {
           </Grid>
           <Grid item xs={1}>
             <div className={styles.quotes}>
-              <img className={styles.challengeImage} src={`${process.env.PUBLIC_URL}/assets/quote-r.png`} alt="quote" />
+              <img
+                className={styles.challengeImage}
+                src={`${process.env.PUBLIC_URL}/assets/quote-r2.png`}
+                alt="quote"
+              />
             </div>
           </Grid>
           <Grid item xs={1}></Grid>
