@@ -1,10 +1,8 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
-import { CallMissedSharp } from "@material-ui/icons";
 import { Typography, Paper } from "@material-ui/core";
 import FormatQuoteIcon from "@material-ui/icons/FormatQuote";
-import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 import { ListComponent, WadeList } from "./List";
 
 const useStyles = makeStyles((theme) => ({
